@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(17, 17, 17, 0.5))), url("https://picsum.photos/seed/picsum/1366/768") center no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(17, 17, 17, 0.5)), url("https://picsum.photos/seed/picsum/1366/768") center no-repeat;
+  background-size: cover;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+}
+
+.clock-wrapper {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #636363;
+  border: .5rem #ccc solid;
+  border-radius: 50%;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+          box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+}
+
+.clock-wrapper::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #999999 inset, -0.2rem -0.2rem 0.2rem #999999 inset;
+          box-shadow: 0.2rem 0.2rem 0.2rem #999999 inset, -0.2rem -0.2rem 0.2rem #999999 inset;
+  z-index: 10;
+}
+
+.clock-wrapper .numbers {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clock-wrapper .numbers div {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+.clock-wrapper .numbers #twelve {
+  position: absolute;
+  top: 1rem;
+  left: 12.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.clock-wrapper .numbers #three {
+  position: absolute;
+  top: 12.5rem;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clock-wrapper .numbers #nine {
+  position: absolute;
+  top: 12.5rem;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clock-wrapper .numbers #six {
+  position: absolute;
+  bottom: 1rem;
+  left: 12.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.clock-wrapper .arrows {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock-wrapper .arrows div {
+  position: absolute;
+  width: 0.5rem;
+  height: 9rem;
+  bottom: 50%;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100% 100% 0 0;
+  background: #fff;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.clock-wrapper .arrows #second {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background: #40a340;
+}
+
+.clock-wrapper .arrows #minute {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  height: 8rem;
+}
+
+.clock-wrapper .arrows #hour {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 0.7rem;
+  height: 6rem;
+}
+/*# sourceMappingURL=style.css.map */
